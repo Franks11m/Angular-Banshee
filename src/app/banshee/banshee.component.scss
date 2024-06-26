@@ -1,0 +1,14 @@
+.character-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card-container nz-card {
+    margin-bottom: 16px;
+}
+
+.character-card-container img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,15 @@
+<div class="creature-card-container">
+    <nz-card *ngFor="let banshee of banshees">
+            <ng-template #coverTemplate>
+            </ng-template>
+        <nz-card [nzCover]="coverTemplate">
+            <ng-template #coverTemplate>
+                <img [src] = "banshee.img" alt = "banshee Image">
+              </ng-template>
+            <nz-card-meta
+                nzTitle="{{banshee.name}}"
+                nzDescription="Specie Number: {{banshee.id}} | Description: {{banshee.description}} | Last See: {{banshee.lastSee}} | Count Last See: {{banshee.countLastSee}} | Extinct: {{banshee.extinct}}">
+            </nz-card-meta> 
+        </nz-card>
+    </nz-card>
+    </div>
